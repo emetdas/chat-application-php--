@@ -39,6 +39,7 @@ input,
 label,
 span,
 div,
+p,
 section {
   font-size: 1.6rem;
 }
@@ -76,6 +77,7 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 .name-details {
   display: flex;
@@ -99,7 +101,7 @@ h2 {
   color: white;
   margin: 1rem 0;
 }
-.link{
+.link {
   text-align: center;
 }
 .link a {
@@ -108,4 +110,99 @@ h2 {
 }
 .link a:hover {
   text-decoration: underline;
+}
+.form-control i {
+  font-size: 1.8rem;
+  background: red;
+  position: absolute;
+  right: 1.5rem;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.profile-img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+.users {
+  padding: 1rem;
+}
+.users header,
+.users-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid gainsboro;
+}
+.content {
+  display: flex;
+}
+.users header .details {
+  margin-left: 2rem;
+}
+.users header .details span {
+  font-weight: 500;
+}
+.users header .logout {
+  color: white;
+  background: #333;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.users .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.users .search input {
+  position: absolute;
+  width: calc(100% - 5rem);
+  height: 3rem;
+  padding: 0 1rem;
+  outline: none;
+}
+.users .search button {
+  width: 4.7rem;
+  height: 3rem;
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0 0.7rem 0.7rem 0;
+  -webkit-border-radius: 0 0.7rem 0.7rem 0;
+  -moz-border-radius: 0 0.7rem 0.7rem 0;
+  -ms-border-radius: 0 0.7rem 0.7rem 0;
+  -o-border-radius: 0 0.7rem 0.7rem 0;
+}
+.users-list .content .details {
+  color: #333;
+}
+.users-list .content .details span {
+  font-weight: 500;
+}
+.users-list a {
+  margin: 1rem 0;
+}
+.status-dot i {
+  font-size: 1.8rem;
+  color: greenyellow;
 }

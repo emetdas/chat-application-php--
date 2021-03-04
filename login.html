@@ -33,10 +33,6 @@
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="assets/images/chat.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
     <title>Chat For Emet</title>
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -45,26 +41,20 @@
       rel="stylesheet"
     />
     <!-- google-fonts -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+  />
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- css file -->
   </head>
   <body>
     <div class="wraper">
-      <section class="form login">
+      <section class="form signup">
         <h2>Realtime chat app</h2>
         <form action="#">
           <div class="error-text">This is error message</div>
-          <div class="name-details">
-            <div class="form-control input">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Enter your First Name" />
-            </div>
-            <div class="form-control input">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Enter your Last Name" />
-            </div>
-          </div>
           <div class="form-control input">
             <label for="email">Email Address</label>
             <input
@@ -78,19 +68,15 @@
             <input
               type="password"
               id="password"
-              placeholder="Enter your New Password"
+              placeholder="Enter your Password"
             />
             <i class="fas fa-key"></i>
           </div>
-          <div class="form-control">
-            <label for="image">Select Image</label>
-            <input type="file" id="password" />
-          </div>
           <div class="form-control button">
-            <input type="submit" name="signup" value="Signup" />
+            <input type="submit" name="login" value="Login" />
           </div>
         </form>
-        <div class="link">Already signed up? <a href="login.html">Login Now</a></div>
+        <div class="link">Not you signed up? <a href="index.html">Sign up</a></div>
       </section>
     </div>
   </body>

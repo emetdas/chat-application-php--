@@ -49,48 +49,44 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- css file -->
   </head>
+
   <body>
     <div class="wraper">
-      <section class="form login">
-        <h2>Realtime chat app</h2>
-        <form action="#">
-          <div class="error-text">This is error message</div>
-          <div class="name-details">
-            <div class="form-control input">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Enter your First Name" />
-            </div>
-            <div class="form-control input">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Enter your Last Name" />
-            </div>
-          </div>
-          <div class="form-control input">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your Email Address"
+      <section class="users">
+        <header>
+          <div class="content">
+            <img
+              src="assets/images/myimage.png"
+              alt="profile Image"
+              class="profile-img"
             />
+            <div class="details">
+              <span>Emet Das</span>
+              <p>Active now</p>
+            </div>
           </div>
-          <div class="form-control input">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your New Password"
-            />
-            <i class="fas fa-key"></i>
-          </div>
-          <div class="form-control">
-            <label for="image">Select Image</label>
-            <input type="file" id="password" />
-          </div>
-          <div class="form-control button">
-            <input type="submit" name="signup" value="Signup" />
-          </div>
-        </form>
-        <div class="link">Already signed up? <a href="login.html">Login Now</a></div>
+          <a href="#" class="logout">Logout</a>
+        </header>
+        <div class="search">
+          <span class="text">Select an user to start chat</span>
+          <input type="text" placeholder="Enter name to search..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="users-list">
+          <a href="#">
+            <div class="content">
+              <img
+                src="assets/images/myimage.png"
+                alt="profile Image"
+                class="profile-img"
+              />
+              <div class="details">
+                <span>Emet Das</span>
+                <p>This is test message</p>
+              </div>
+            </div>
+            <div class="status-dot"><i class="fas fa-circle"></i></div>
+          </a>
       </section>
     </div>
   </body>
