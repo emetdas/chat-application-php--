@@ -7,32 +7,13 @@
 *------------------------------------------------------------------------------------------
 */
 /* Roboto fonts aded */
-@font-face{
-    src: url(../assets/fonts/Roboto-Thin.ttf);
-    font-family: Roboto;
-}
-@font-face{
-    src: url(../assets/fonts/Roboto-Regular.ttf);
-    font-family: Roboto;
-}
-@font-face{
-    src: url(../assets/fonts/Roboto-Medium.ttf);
-    font-family: Roboto;
-}
-@font-face{
-    src: url(../assets/fonts/Roboto-Bold.ttf);
-    font-family:Roboto;
-}
-@font-face{
-    src: url(../assets/fonts/Roboto-Black.ttf);
-    font-family:Roboto;
-}
+
 /* Roboto fonts aded */
 /* reset code */
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #333333;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #333333;
 }
 /* reset code */
