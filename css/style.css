@@ -10,10 +10,102 @@
 
 /* Roboto fonts aded */
 /* reset code */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
 body {
-    font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-style: normal;
   color: #333333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(247, 247, 247);
+}
+a,
+li,
+ul,
+input,
+label,
+span,
+div,
+section {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 2rem;
 }
 /* reset code */
+.wraper {
+  width: 45rem;
+  background: white;
+  box-shadow: 0 0 1.2rem 0 rgba(247, 247, 247, 0.048),
+    0 0 1.2rem -2rem rgba(247, 247, 247, 0.048);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.form {
+  padding: 2rem;
+}
+.form h2 {
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid rgb(206, 206, 206);
+  margin-bottom: 1rem;
+}
+.form .error-text {
+  background: rgb(243 181 181);
+  text-align: center;
+  padding: 0.5rem;
+  color: #a53636;
+  margin-bottom: 1rem;
+}
+.form form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.name-details {
+  display: flex;
+  gap: 1rem;
+}
+.form form .form-control label {
+  padding: 0.3rem 0;
+}
+.form form .input input {
+  height: 3rem;
+  padding-left: 1rem;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+.button input {
+  height: 3rem;
+  background: rgb(87, 85, 212);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin: 1rem 0;
+}
+.link{
+  text-align: center;
+}
+.link a {
+  font-weight: bold;
+  color: #333333;
+}
+.link a:hover {
+  text-decoration: underline;
+}
