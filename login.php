@@ -76,7 +76,7 @@
             <input type="submit" name="login" value="Login" />
           </div>
         </form>
-        <div class="link">Not you signed up? <a href="index.html">Sign up</a></div>
+        <div class="link">Not you signed up? <a href="index.php">Sign up</a></div>
       </section>
     </div>
     <script src="js/password-show-and-hide.js"></script>

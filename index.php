@@ -90,7 +90,7 @@
             <input type="submit" name="signup" value="Signup" />
           </div>
         </form>
-        <div class="link">Already signed up? <a href="login.html">Login Now</a></div>
+        <div class="link">Already signed up? <a href="login.php">Login Now</a></div>
       </section>
     </div>
   <script src="js/password-show-and-hide.js"></script>

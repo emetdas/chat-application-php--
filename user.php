@@ -65,7 +65,7 @@
               <p>Active now</p>
             </div>
           </div>
-          <a href="#" class="logout">Logout</a>
+          <a href="logout.php" class="logout">Logout</a>
         </header>
         <div class="search">
           <span class="text">Select an user to start chat</span>
