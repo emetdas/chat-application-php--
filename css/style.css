@@ -72,6 +72,7 @@ h2 {
   padding: 0.5rem;
   color: #a53636;
   margin-bottom: 1rem;
+  display: none;
 }
 .form form .form-control {
   display: flex;
@@ -168,6 +169,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
   margin-top: 2rem;
   position: relative;
 }
@@ -175,15 +177,27 @@ h2 {
   position: absolute;
   width: calc(100% - 5rem);
   height: 3rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   outline: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.users .search input.active {
+  opacity: 1;
+  pointer-events: auto;
+  width: calc(100% - 7rem);
 }
 .users .search button {
   width: 4.7rem;
   height: 3rem;
   cursor: pointer;
-  color: #fff;
-  background: #333;
+  color: #333;
+  background: #fff;
   outline: none;
   border: none;
   font-size: 1.6rem;
@@ -192,6 +206,13 @@ h2 {
   -moz-border-radius: 0 0.7rem 0.7rem 0;
   -ms-border-radius: 0 0.7rem 0.7rem 0;
   -o-border-radius: 0 0.7rem 0.7rem 0;
+}
+.users .search button.active {
+  color: #fff;
+  background: #333;
+}
+.users .search button.active i::before {
+  content: "\f00d";
 }
 .users-list {
   margin-top: 1rem;
