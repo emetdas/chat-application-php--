@@ -142,8 +142,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid gainsboro;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid rgb(228, 228, 228);
 }
 .content {
   display: flex;
@@ -193,16 +193,146 @@ h2 {
   -ms-border-radius: 0 0.7rem 0.7rem 0;
   -o-border-radius: 0 0.7rem 0.7rem 0;
 }
+.users-list {
+  margin-top: 1rem;
+  max-height: 25rem;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+.users-list::-webkit-scrollbar {
+  width: 0;
+}
 .users-list .content .details {
   color: #333;
+  margin-left: 1rem;
 }
 .users-list .content .details span {
   font-weight: 500;
 }
+.users-list .content .details p {
+  color: rgb(131, 131, 131);
+}
 .users-list a {
   margin: 1rem 0;
+  page-break-after: 1rem;
+  border-bottom: 0.1rem solid rgb(241, 241, 241);
+  padding-right: 1.5rem;
 }
-.status-dot i {
+.users-list a:last-child {
+  border: none;
+  margin: 0;
+}
+.users-list a .status-dot {
   font-size: 1.8rem;
-  color: greenyellow;
+  color: #468669;
+}
+.users-list a .status-dot.ofline {
+  color: #ccc;
+}
+.chat-area header {
+  display: flex;
+  padding: 1rem 1rem;
+  align-items: center;
+}
+.details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.back-icon {
+  font-size: 1.8rem;
+  color: #333;
+}
+.chat-area {
+  box-shadow: 0.1rem 0.1rem 0.6rem rgb(233, 233, 233),
+    -0.1rem -0.1rem 0.6rem rgb(233, 233, 233);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.chat-box {
+  height: 40rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  overflow-y: auto;
+}
+.chat-box::-webkit-scrollbar {
+  width: 0;
+}
+.chat-box .outgoing {
+  display: flex;
+  background: #333;
+  color: white;
+  width: calc(100% - 13rem);
+  margin-left: auto;
+  border-radius: 1.8rem 1.8rem 0 1.8rem;
+  -webkit-border-radius: 1.8rem 1.8rem 0 1.8rem;
+  -moz-border-radius: 1.8rem 1.8rem 0 1.8rem;
+  -ms-border-radius: 1.8rem 1.8rem 0 1.8rem;
+  -o-border-radius: 1.8rem 1.8rem 0 1.8rem;
+}
+.chat-box .chat {
+  padding: 0.5rem 1rem;
+}
+.chat-box .chat p {
+  word-wrap: break-word;
+}
+.icoming {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin: 1rem 0;
+}
+.icoming .deatils {
+  width: calc(100% - 13rem);
+  margin-right: auto;
+}
+.icoming img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 0.3rem;
+}
+.icoming .deatils p {
+  color: #333;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0.4rem 0.4rem 1rem #e7e7e7;
+  border-radius: 1.8rem 1.8rem 1.8rem 0;
+  -webkit-border-radius: 1.8rem 1.8rem 1.8rem 0;
+  -moz-border-radius: 1.8rem 1.8rem 1.8rem 0;
+  -ms-border-radius: 1.8rem 1.8rem 1.8rem 0;
+  -o-border-radius: 1.8rem 1.8rem 1.8rem 0;
+}
+.typing-area {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 0.2rem;
+}
+.typing-area input {
+  height: 3.5rem;
+  outline: none;
+  border: 0.1rem solid #333;
+  width: calc(100% - 5rem);
+  padding: 0 1rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  -webkit-border-radius: 0.4rem 0 0 0.4rem;
+  -moz-border-radius: 0.4rem 0 0 0.4rem;
+  -ms-border-radius: 0.4rem 0 0 0.4rem;
+  -o-border-radius: 0.4rem 0 0 0.4rem;
+}
+.typing-area button {
+  width: 4.5rem;
+  background: rgb(43, 43, 43);
+  color: white;
+  outline: none;
+  border: none;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 0 0.4rem 0.4rem 0;
+  -webkit-border-radius: 0 0.4rem 0.4rem 0;
+  -moz-border-radius: 0 0.4rem 0.4rem 0;
+  -ms-border-radius: 0 0.4rem 0.4rem 0;
+  -o-border-radius: 0 0.4rem 0.4rem 0;
 }
