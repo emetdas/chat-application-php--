@@ -33,10 +33,6 @@
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="assets/images/chat.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
     <title>Chat For Emet</title>
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -45,54 +41,8 @@
       rel="stylesheet"
     />
     <!-- google-fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- css file -->
   </head>
-  <body>
-    <div class="wraper">
-      <section class="form login">
-        <h2>Realtime chat app</h2>
-        <form action="#">
-          <div class="error-text">This is error message</div>
-          <div class="name-details">
-            <div class="form-control input">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Enter your First Name" />
-            </div>
-            <div class="form-control input">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Enter your Last Name" />
-            </div>
-          </div>
-          <div class="form-control input">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your Email Address"
-            />
-          </div>
-          <div class="form-control input">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your New Password"
-            />
-            <i class="fas fa-key"></i>
-          </div>
-          <div class="form-control">
-            <label for="image">Select Image</label>
-            <input type="file"/>
-          </div>
-          <div class="form-control button">
-            <input type="submit" name="signup" value="Signup" />
-          </div>
-        </form>
-        <div class="link">Already signed up? <a href="login.html">Login Now</a></div>
-      </section>
-    </div>
-  <script src="js/password-show-and-hide.js"></script>
-  </body>
-</html>

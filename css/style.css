@@ -278,6 +278,9 @@ h2 {
   background: #f7f7f7;
   overflow-y: auto;
 }
+.chat{
+  margin: 1rem 0;
+}
 .chat-box::-webkit-scrollbar {
   width: 0;
 }
