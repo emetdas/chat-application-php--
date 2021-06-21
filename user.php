@@ -36,4 +36,4 @@ if (mysqli_num_rows($sql) > 0) {
   <script src="js/users.js"></script>
 </body>
 
-</html>
+</html> 
