@@ -16,13 +16,13 @@ if (mysqli_num_rows($sql) > 0) {
     <section class="users">
       <header>
         <div class="content">
-          <img src="php/upload/<?php echo $row['image'] ; ?>" alt="profile Image" class="profile-img" />
+          <img src="php/upload/<?php echo $row['image']; ?>" alt="profile Image" class="profile-img" />
           <div class="details">
             <span><?php echo $row['fname'] . " " . $row['lname']; ?></span>
             <p><?php echo $row['status']; ?></p>
           </div>
         </div>
-        <a href="logout.php" class="logout">Logout</a>
+        <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Logout</a>
       </header>
       <div class="search">
         <span class="text">Select an user to start chat</span>

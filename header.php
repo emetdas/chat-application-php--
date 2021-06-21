@@ -33,10 +33,6 @@
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="assets/images/chat.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
     <title>Chat For Emet</title>
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -45,6 +41,7 @@
       rel="stylesheet"
     />
     <!-- google-fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- css file -->

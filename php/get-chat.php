@@ -12,7 +12,7 @@ if (isset($_SESSION['unique_id'])) {
     if (mysqli_num_rows($query) > 0) {
         while ($row = mysqli_fetch_assoc($query)) {
             if ($row['outgoing_msg_id'] === $outgoing_id) {
-                $output .= ' <div class="chat outgoing">
+                $output .= '<div class="chat outgoing">
                 <div class="deatils">
                   <p>
                     ' . $row['msg'] . '

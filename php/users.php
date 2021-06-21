@@ -2,6 +2,7 @@
 session_start();
 include 'config.php';
 $outgoing_id = $_SESSION['unique_id'];
+// WHERE NOT unique_id ={$outgoing_id}
 $sql = mysqli_query($con, "SELECT * FROM users");
 $output = "";
 if (mysqli_num_rows($sql) == 1) {

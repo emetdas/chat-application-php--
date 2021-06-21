@@ -9,17 +9,18 @@ while ($row = mysqli_fetch_assoc($sql)) {
     $result = "No message available";
   }
   (strlen($result) > 28) ? $msg = strtr($result, 0, 28) . '...' : $msg = $result;
-  ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You:" :$you ="";
+  ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You:" : $you = "";
+  ($row['status'] == 'Offline now') ? $offline = "offline" :$offline = "";
   $output .= '
      <a href="chat.php?user_id=' . $row['unique_id'] . '">
         <div class="content">
           <img src="php/upload/' . $row['image'] . '" alt="profile Image" class="profile-img" />
           <div class="details">
             <span>' . $row['fname'] . " " . $row['lname'] . '</span>
-            <p>' .$you. $msg . '</p>
+            <p>' . $you . $msg . '</p>
           </div>
         </div>
-        <div class="status-dot"><i class="fas fa-circle"></i></div>
+        <div class="status-dot"'.$offline.'><i class="fas fa-circle"></i></div>
       </a>
      ';
 }
