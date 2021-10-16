@@ -213,6 +213,7 @@ h2 {
 }
 .users .search button.active i::before {
   content: "\f00d";
+  font-family: "Font Awesome 5 Brands"; 
 }
 .users-list {
   margin-top: 1rem;
